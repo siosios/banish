@@ -1,8 +1,7 @@
 # Credit goes to Helix over at ipfire.org - https://people.ipfire.org/~helix/auto-dnsbl/
 
-## This directory contains test versions of Banish which has been re-written as an 
-add-on for ipblocklist. The original version of Banish was an add-on for IPCop 
-V1 but was abandoned by its author Sid McLaurin.
+## This directory contains test versions of Banish which has been re-written as an add-on for ipblocklist. 
+The original version of Banish was an add-on for IPCop V1 but was abandoned by its author Sid McLaurin.
 
 ## ***** Banish-001.tar.gz  ******
 
@@ -22,12 +21,12 @@ Installation is the same as ipblocklist.
 Get the latest version of banish and copy it to yout /tmp directory on your 
 firewall.
 
-    extract the tar file using "tar -xvf banish-xxx.tar.gz -C /" Regenerate the 
-language cache with "update-lang-cache"
+    extract the tar file using "tar -xvf banish-xxx.tar.gz -C /" 
+     
+Regenerate the language cache with "update-lang-cache"
     
-Note this add-on will modify ipblocklists sources file by adding an additional 
-source 'BANISH' to the menu.
-
+# Note:
+this add-on will modify ipblocklists sources file by adding an additional source 'BANISH' to the menu.
 
 See: https://github.com/Grantura/Banish-IPFire#readme for original port details.
 
