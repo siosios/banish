@@ -1,8 +1,10 @@
-This directory contains test versions of Banish which has been re-written as an 
+# Credit goes to Helix over at ipfire.org - https://people.ipfire.org/~helix/auto-dnsbl/
+
+## This directory contains test versions of Banish which has been re-written as an 
 add-on for ipblocklist. The original version of Banish was an add-on for IPCop 
 V1 but was abandoned by its author Sid McLaurin.
 
-***** Banish-001.tar.gz  ******
+## ***** Banish-001.tar.gz  ******
 
 2022-05-24
 
@@ -30,11 +32,13 @@ source 'BANISH' to the menu.
 See: https://github.com/Grantura/Banish-IPFire#readme for original port details.
 
 
-******* Banish-002.tar.gz ********
+## ******* Banish-002.tar.gz ********
 
 2022-12-27
 
-Requirements IPFire 2.27 (x86_64) - Core-Update 170 or later.
+# Requirements IPFire 2.27 (x86_64) - Core-Update 170 or later.
+
+## Info:
 
 This version of Banish adds the facility to block on Autonomous System Number 
 (ASN) as well as the earlier method of IP Address, CIDR or FQDN. 
@@ -61,30 +65,43 @@ any remark if required and will be entered into to the Banish blocklist with the
 'add button'. The entry will become active on the next IP-blocklist update which 
 is run every 15 minutes. 
 
-Banish-002 will add the following new files to IPfire:
+## Banish-002 will add the following new files to IPfire:
 
-/srv/web/ipfire/cgi-bin/BanishGeo.cgi 
-/srv/web/ipfire/cgi-bin/logs.cgi/Banishlog.dat /srv/web/ipfire/html/banish_list 
-/usr/local/bin/Banish_Sort.pl /var/ipfire/Banish/Banish_config 
-/var/ipfire/Banish/Banish-functions.pl /var/ipfire/Banish/Banish_settings 
-/var/ipfire/Banish/ip_Banishlist /var/ipfire/addon-lang/Banish.de.pl 
-/var/ipfire/addon-lang/Banish.en.pl /var/ipfire/addon-lang/Banish.es.pl 
-/var/ipfire/addon-lang/Banish.fr.pl /var/ipfire/addon-lang/Banish.it.pl 
-/var/ipfire/addon-lang/Banish.nl.pl /var/ipfire/addon-lang/Banish.pt.pl 
+/srv/web/ipfire/cgi-bin/BanishGeo.cgi
+
+/srv/web/ipfire/cgi-bin/logs.cgi/Banishlog.dat /srv/web/ipfire/html/banish_list
+
+/usr/local/bin/Banish_Sort.pl /var/ipfire/Banish/Banish_config
+
+/var/ipfire/Banish/Banish-functions.pl /var/ipfire/Banish/Banish_settings
+
+/var/ipfire/Banish/ip_Banishlist /var/ipfire/addon-lang/Banish.de.pl
+
+/var/ipfire/addon-lang/Banish.en.pl /var/ipfire/addon-lang/Banish.es.pl
+
+/var/ipfire/addon-lang/Banish.fr.pl /var/ipfire/addon-lang/Banish.it.pl
+
+/var/ipfire/addon-lang/Banish.nl.pl /var/ipfire/addon-lang/Banish.pt.pl
+
 /var/ipfire/menu.d/EX-Banishlog.menu /var/ipfire/menu.d/EX-banish.menu
 
-These IPFire files are modified:
+## These IPFire files are modified:
 
 /srv/web/ipfire/cgi-bin/logs.cgi/log.dat 
 /var/ipfire/ipblocklist/sources
 
-To install.. Download Banish-002.tar.gz to /tmp 
-Extract the tar file using "tar -xvf banish-xxx.tar.gz -C /" 
+# To install.. 
+Download Banish-002.tar.gz to /tmp
+
+Extract the tar file using "tar -xvf banish-xxx.tar.gz -C /"
+
 Regenerate the language cache with "update-lang-cache"
 
-Note 1: this is an addon for IP Address Blocklists and the Banish blocklist 
+## Note 1:
+this is an addon for IP Address Blocklists and the Banish blocklist 
 needs to be enabled in the IP Address Blocklists menu and the firewall ruleset 
 reloaded with the "Apply Changes" button in the "Firewall Rules" menu.
 
-Note 2: Banish entries are are updated every 15 minutes when IP-based blocking 
+# Note 2: 
+Banish entries are are updated every 15 minutes when IP-based blocking 
 is updated.
